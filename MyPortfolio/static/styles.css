@@ -434,15 +434,21 @@ h3{
     margin-bottom: 20px;
     text-align: center;
     position: relative;
+    max-width: 200px;
 }
 .contact-info>p{
     position: relative;
     display: flex;
     align-items: center;
+    align-content: center; 
+    align-self: center;
     gap: 10px;
     color: var(--color-white);
-    /* margin-block: 5px; */
+    margin-block: 5px;
+    margin-left: -1%;
+    /* width:100%; */
     font-size: 12px;
+    max-width: 300px;
 }
 .contact-info p>i{
     font-size: 14px;
@@ -524,17 +530,20 @@ footer{
 }
 .middle-footer .footer-menu{
     display: flex;
-    gap: 20px;
-    align-items: center; 
-    position: relative;
+    /* gap: 20px; */
+    align-items: center;
+    align-content: center; 
+    align-self: center;
+    position: absolute;
     column-gap: 20px;
-    width: 80%;
-    max-width: 500px;
+    margin-left: -12%;
+    width:100%;
+    max-width: 450px;
 }
 .footer_menu_list{
     list-style: none;
-    position: relative;
-    gap: 10px;
+    position:relative;
+    /* gap: 10px; */
     align-items: center; 
 
 }
@@ -547,13 +556,14 @@ footer{
     
 }
 .footer-social-icons{
+    margin-top: 10px;
     display: flex;
     gap: 30px; 
     align-items: center;  
 }
 .bottom-footer{
     font-size: 14px;
-    margin-top: 220px;
+    margin-top: 200px;
     align-items: center;
     align-content: center; 
     align-self: center;
