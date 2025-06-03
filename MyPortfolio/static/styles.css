@@ -439,6 +439,7 @@ h3{
     gap: 10px;
     color: var(--color-white);
     margin-block: 5px;
+    font-size: 12px;
 }
 .contact-info p>i{
     font-size: 14px;
@@ -640,9 +641,8 @@ footer{
     .input-field{
         width: 100%;
     }
+
 }
-
-
 /* body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f5f7fa;
@@ -682,7 +682,8 @@ svg.timeline-svg {
 /* Milestone boxes */
 .milestone {
   position: relative;
-  width: 95%;
+  width: 80%;
+  max-width: 450px;
   padding: 1rem 2rem;
   background: white;
   border-radius: 8px;
@@ -738,7 +739,8 @@ svg.timeline-svg {
 
 /* Left and right milestone boxes alternate */
 .milestone.left {
-  left: -52%;
+  /* left: -40%; */
+  right:37%;
   text-align: right;
   padding-right: 3rem;
 }
