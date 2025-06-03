@@ -423,7 +423,7 @@ h3{
     align-items: center;
     padding: 20px 30px;
     width: 100%;
-    height: 315px;
+    height: 318px;
     background: var(--second-color);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -441,7 +441,7 @@ h3{
     margin-block: 5px;
 }
 .contact-info p>i{
-    font-size: 18px;
+    font-size: 14px;
 }
 .contact-info::after{
     background: var(--color-white);
@@ -657,7 +657,7 @@ h1 {
 }
 .timeline-container {
   position: relative;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 3rem;
   min-height: 700px;
@@ -703,7 +703,7 @@ svg.timeline-svg {
 /* ‘Start’ milestone box with dot above */
 .milestone.start {
   width: auto;
-  max-width: 650px;
+  max-width: 400px;
   position: relative;
   margin: 3rem auto 5rem auto;
   padding: 1.5rem 1.5rem 1rem 1.5rem; /* top padding for dot spacing */
@@ -743,16 +743,19 @@ svg.timeline-svg {
   padding-right: 3rem;
 }
 .milestone.left .milestone-dot {
-  right: -61px;
+    left: 105.3%;
+  /* right: -61px; */
   top: 1.5rem;
 }
 .milestone.right {
-  left: 55.7%;
+
+  left: 57%;
   text-align: left;
   padding-left: 3rem;
 }
 .milestone.right .milestone-dot {
-  left: -52px;
+    right: 105.3%;
+  /* left: -52px; */
   top: 1.5rem;
 }
 
