@@ -657,7 +657,7 @@ h1 {
 }
 .timeline-container {
   position: relative;
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 3rem;
   min-height: 700px;
@@ -738,7 +738,7 @@ svg.timeline-svg {
 
 /* Left and right milestone boxes alternate */
 .milestone.left {
-  left: -51.1%;
+  left: -52%;
   text-align: right;
   padding-right: 3rem;
 }
@@ -747,7 +747,7 @@ svg.timeline-svg {
   top: 1.5rem;
 }
 .milestone.right {
-  left: 55%;
+  left: 55.7%;
   text-align: left;
   padding-left: 3rem;
 }
