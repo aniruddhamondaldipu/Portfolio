@@ -521,12 +521,18 @@ footer{
 }
 .middle-footer .footer-menu{
     display: flex;
-    gap: 20px; 
+    gap: 20px;
     align-items: center; 
     position: relative;
+    column-gap: 20px;
+    width: 80%;
+    max-width: 500px;
 }
 .footer_menu_list{
     list-style: none;
+    position: relative;
+    gap: 20px;
+    align-items: center; 
 
 }
 .footer_menu_list a{
@@ -545,10 +551,13 @@ footer{
 .bottom-footer{
     font-size: 14px;
     margin-top: 220px;
-    /* align-items: center; */
-    /* align-content: center; */
-    /* align-self: center; */
+    margin-left: 10%;
+    align-items: center;
+    align-content: center; 
+    align-self: center;
     position: absolute;
+    width: 80%;
+    max-width: 500px;
 }
 
 
