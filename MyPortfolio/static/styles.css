@@ -527,19 +527,25 @@ footer{
     align-items: center; 
 }
 .middle-footer .footer-menu{
+    position: fixed;
+    /* left: -5%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
     /* gap: 20px; */
     align-items: center;
-
+    flex-direction: row;
     position: relative;
     /* column-gap: 20px; */
     /* margin-left: -2%; */
     /* width:100%; */
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     /* max-width: 400px; */
 }
 .footer_menu_list{
+    flex-direction: column;
     list-style: none;
     position:relative;
     margin-left: 20px;
