@@ -513,26 +513,35 @@ footer{
 .top-footer p{
     font-size: 25px;
     font-weight: 600;
+    align-items: center; 
 }
 .middle-footer .footer-menu{
     display: flex;
+    gap: 30px; 
+    align-items: center; 
 }
 .footer_menu_list{
     list-style: none;
+
 }
 .footer_menu_list a{
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
     margin-inline: 20px;
+    
 }
 .footer-social-icons{
     display: flex;
-    gap: 30px;   
+    gap: 30px; 
+    align-items: center;  
 }
 .bottom-footer{
     font-size: 14px;
     margin-top: 10px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
 }
 
 
