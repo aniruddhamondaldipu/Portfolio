@@ -441,11 +441,14 @@ h3{
     align-items: center;
     gap: 10px;
     color: var(--color-white);
-    margin-block: 5px;
+    /* margin-block: 5px; */
     font-size: 12px;
 }
 .contact-info p>i{
     font-size: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 .contact-info::after{
     background: var(--color-white);
@@ -531,14 +534,14 @@ footer{
 .footer_menu_list{
     list-style: none;
     position: relative;
-    gap: 20px;
+    gap: 10px;
     align-items: center; 
 
 }
 .footer_menu_list a{
     text-decoration: none;
     color: var(--text-color-second);
-    font-weight: 500;
+    /* font-weight: 500; */
     margin-inline: 20px;
     position: relative;
     
@@ -551,13 +554,12 @@ footer{
 .bottom-footer{
     font-size: 14px;
     margin-top: 220px;
-    margin-left: 10%;
     align-items: center;
     align-content: center; 
     align-self: center;
     position: absolute;
-    width: 80%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 360px;
 }
 
 
