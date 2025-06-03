@@ -1,0 +1,301 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <title> Portfolio | Aniruddha Mondal</title>
+</head>
+<body>
+   <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">AM</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Experience</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="{{ url_for('static', filename='files/Aniruddha_Mondal_Resume.pdf') }}" download="Aniruddha_Mondal_Resume.pdf">
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- -------------- MAIN ---------------- -->
+      <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Aniruddha Mondal</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm a <span class="typedText">Data Analyst</span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>A high-spirited data analyst with over 4 years of experience in data analysis and visualization.</p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <a href="{{ url_for('static', filename='files/Aniruddha_Mondal_Resume.pdf') }}" download="Aniruddha_Mondal_Resume.pdf">
+                    <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                </a>
+                
+            </div>
+            <div class="social_icons">
+                <a href="https://www.instagram.com/mondal_aniruddha/" target="_blank">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/in/aniruddha-mondal-7bb600155/" target="_blank">
+                <div class="icon" ><i class="uil uil-linkedin-alt"></i></div>
+                </a>
+            </div>
+          </div>
+          <div class="featured-image">
+            
+            <div class="image"> 
+                <img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="avatar">
+            </div>
+            
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+       </section>
+
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My Introduction</h3>
+                    <p>A high-spirited data analyst with over 4 years of experience in data analysis and visualization. Proficient in Python, SQL, Power BI, 
+                        PowerApps, and Excel, with a focus on streamlining business processes through data-driven insights and automation. 
+                        Passionate about using analytics to enhance efficiency and deliver measurable improvements aligned with company goals. 
+                        Eager to collaborate with dynamic teams and make a meaningful impact in a data-driven environment.
+                        </p>
+                    <div class="about-btn">
+                        <a href="{{ url_for('static', filename='files/Aniruddha_Mondal_Resume.pdf') }}" download="Aniruddha_Mondal_Resume.pdf">
+                            <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col"> 
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Data Analysis</span>
+                        <span>Data extraction</span>
+                        <span>Data Visualization</span>
+                        <span>Power BI</span>
+                        <span>Power Apps</span>
+                        <span>Power Automate</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>AWS Lambda</span>
+                        <span>AWS Glue</span>
+                        <span>Amazon Redshift</span>
+                        <span>AWS S3</span>
+                        <span>AWS Step Function</span>
+                        <span>Advanced Excel</span>
+                        <span>Alteryx</span>
+                        <span>Qlik Sense</span>
+                        <span>Big Query</span>
+                        <span>MySQL</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+       </section>
+
+       <!-- -------------- EXPERIENCE BOX ---------------- -->
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Experience</h1>
+          </div>
+          <div class="project-container">
+              <div class="timeline-container" aria-label="Growth milestones timeline" role="list">
+                <svg class="timeline-svg" width="40" height="0" aria-hidden="true" focusable="false" >
+                <path fill="none" stroke="#6E57E0" stroke-width="4" d="" />
+                </svg>
+
+                <!-- Note: milestones ordered bottom to top, so Start last in HTML for flex-column-reverse -->
+                <article class="milestone start" tabindex="0" role="listitem">
+                <div class="milestone-dot" aria-hidden="true"></div>
+                <h3 >PRODAPT SOLUTIONS PRIVATE LIMITED, Intern</h3>
+                <time datetime="2020-07">July 2020</time>
+                </article>
+
+                <article class="milestone left" tabindex="0" role="listitem">
+                <div class="milestone-dot" aria-hidden="true"></div>
+                <h3>PRODAPT SOLUTIONS PRIVATE LIMITED, Associate Software Engineer, Chennai, India</h3>
+                <time datetime="2021-02">February 2021</time>
+                <p>Applied machine learning to forecast customer issues, reducing unnecessary dispatches and repair call truck rolls by 
+                                    25%. Implemented predictive analytics, cutting dispatch time by 20% and boosting technician efficiency by 15% in 
+                                    resolving faults related to copper line connections.</p>
+                </article>
+
+                <article class="milestone right" tabindex="0" role="listitem">
+                <div class="milestone-dot" aria-hidden="true"></div>
+                <h3>PRODAPT SOLUTIONS PRIVATE LIMITED, Software Engineer, Chennai, India </h3>
+                <time datetime="2022-01">November 2022</time>
+                <p>Orchestrated the seamless migration of customer data between telecom network databases using AWS cloud services, 
+                                    slashing migration time by 30% for a smoother customer experience. Developed Qlik Sense dashboards to visually 
+                                    represent customer data, leading to a 15% improvement in decision-making and a 10% enhancement in strategy 
+                                    development</p>
+                </article>
+
+                <article class="milestone left" tabindex="0" role="listitem">
+                <div class="milestone-dot" aria-hidden="true"></div>
+                <h3>EY GDS, Analyst III, Kolkata, India</h3>
+                <time datetime="2023-01">January 2023</time>
+                <p><ul>
+                                <li>Developed a robust desktop application using Python, streamlining report generation by 20% through efficient 
+                                    extraction and management of audit data from SOX reports.</li>
+                                <li>Implemented a comprehensive solution utilizing Python, Excel, and VBA to automate data extraction from PDF audit 
+                                    reports, resulting in a 75% reduction in manual effort and significant time savings.</li>
+                    </ul>
+                </p>
+                </article>
+
+                <article class="milestone right" tabindex="0" role="listitem">
+                <div class="milestone-dot" aria-hidden="true"></div>
+                <h3>EY GDS, Consultant I, Kolkata, India</h3>
+                <time datetime="2024-10">October 2024</time>
+                <p>Collaborated with US clients to enhance audit data, converting raw data into actionable insights and reducing data 
+                            processing time by 45%. Developed interactive Power BI dashboards with PowerApps integration, improving data flow 
+                            by 40% through Power Automate.
+                </p>
+                </article>
+
+                <article class="milestone left" tabindex="0" role="listitem">
+                <div class="milestone-dot" aria-hidden="true"></div>
+                <h3>EY GDS, Consultant I, Kolkata, India</h3>
+                <!-- <time datetime="2025">Present</time> -->
+                <time datetime=""><span id="year"></span>- Present</time>
+
+                <!-- <script>
+                    document.getElementById("year").textContent = new Date().getFullYear();
+                </script> -->
+                <p>Built an automation tool using PowerApps, Power Automate, and Power BI to streamline business processes for the 
+                            Talent Resource team, enabling the tracking of recruiter and requestor activities in a single platform, allowing real-time 
+                            tracking of candidate statuses, and reducing manual work by 85%.
+                </p>
+
+                </article>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in Touch</h1>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me</h2>
+                    <p><i class="uil uil-envelope"></i> Email: aniruddhamondaldipu@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Phone: +91 9937953405</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>AM.</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list"><a href="#home">Home</a></li>
+                <li class="footer_menu_list"><a href="#about">About</a></li>
+                <li class="footer_menu_list"><a href="#projects">Experience</a></li>
+                <li class="footer_menu_list"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://www.instagram.com/mondal_aniruddha/" target="_blank">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/aniruddha-mondal-7bb600155/" target="_blank">
+            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+            </a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Aniruddha Mondal</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
