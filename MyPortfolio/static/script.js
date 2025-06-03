@@ -114,7 +114,7 @@ function scrollActive() {
   })
 }
 
-// window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive)
 
 const milestones = document.querySelectorAll('.milestone');
 const svg = document.querySelector('svg.timeline-svg');
@@ -184,6 +184,6 @@ window.addEventListener('load', () => {
   revealMilestones();
   updatePath();
 });
-window.addEventListener('resize', updatePath);
+//window.addEventListener('resize', updatePath);
 
 document.getElementById("year").textContent = new Date().getFullYear();
