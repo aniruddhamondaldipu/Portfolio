@@ -432,8 +432,11 @@ h3{
 .contact-info>h2{
     color: var(--color-white);
     margin-bottom: 20px;
+    text-align: center;
+    position: relative;
 }
 .contact-info>p{
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -511,13 +514,14 @@ footer{
     padding-block: 40px 60px;
 }
 .top-footer p{
+    text-align: center;
     font-size: 25px;
     font-weight: 600;
     align-items: center; 
 }
 .middle-footer .footer-menu{
     display: flex;
-    gap: 30px; 
+    gap: 20px; 
     align-items: center; 
 }
 .footer_menu_list{
@@ -542,6 +546,7 @@ footer{
     align-items: center;
     align-content: center;
     align-self: center;
+    position: relative;
 }
 
 
